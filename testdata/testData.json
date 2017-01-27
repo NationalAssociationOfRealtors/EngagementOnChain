@@ -1,0 +1,84 @@
+{
+	"users":[
+		{
+			"id":"john1",
+			"nrds":"084003277",
+			"password":"passw0rd",
+			"firstName":"John",
+			"lastName":"Doe",
+			"things":["2"],
+            "address": "Dam 1, 1012 JS Amsterdam, The Netherlands",
+            "phoneNumber": "0900 0048",
+            "emailAddress": "johndoe@gmail.com",
+            "role": 0
+		},
+		{
+			"id":"dconroy",
+			"nrds":"084001677",
+			"password":"Abudabu1!",
+			"firstName":"Dave",
+			"lastName":"Conroy",
+			"things":["1","2","3","4","7"],
+			"address": "123 Fake Street",
+			"phoneNumber": "123-123-1234 ",
+			"emailAddress": "johndoe@gmail.com",
+			"role": 0
+		},
+		{
+			"id":"jane1",
+			"nrds":"084003277",
+			"password":"passw0rd",
+			"firstName":"Jane",
+			"lastName":"Doe",
+			"things":["2"],
+			"address": "128 West 44th Street, New York, NY 10036, United States",
+			"phoneNumber": "0900 0024",
+			"emailAddress": "janedoe@gmail.com",
+			"role": 1
+		}
+	],
+	"things":[
+		{
+			"id":"1",
+			"description":"National Board of Directors",
+			"date": "2016",
+			"assoc_id":"1"
+		},
+		{
+			"id":"2",
+			"description":"State Board of Directors",
+			"date": "2016",
+			"assoc_id":"0840"
+		},
+		{
+			"id":"3",
+			"description":"Local Board of Directors",
+			"date": "2016",
+			"assoc_id":"1586"
+		},
+		{
+			"id":"4",
+			"description":"Local Finance Committee",
+			"date": "2015",
+			"assoc_id":"0369"
+		},
+		{
+			"id":"5",
+			"description":"State Strategic Planning Committee",
+			"date": "2014",
+			"assoc_id":"1"
+		},
+		{
+			"id":"6",
+			"description":"Local RPAC Committee",
+			"date": "2013",
+			"assoc_id":"0369"
+		},
+		{
+			"id":"7",
+			"description":"IT Security for Dummies",
+			"date": "2001",
+			"assoc_id":"2050"
+		}
+	]
+}
