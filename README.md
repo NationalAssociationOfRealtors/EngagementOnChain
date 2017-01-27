@@ -1,7 +1,10 @@
 # CommitteeChain
 Distributed Committee Service Tracking on Hyperledger Fabric
 
-There is a simple AngularJS frontend application, a NodeJS backend application and of course a blockchain network. Locally, the boilerplate starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
+
+![Screenshots](/client/assets/ss.png)
+
+There is a simple AngularJS frontend application, a NodeJS backend application and of course a blockchain network. Locally, the app starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
 
 The Application uses Hyperledger Fabric **v0.6.1-developer-preview** and **HFC 0.6.5**.
 
@@ -9,7 +12,7 @@ This Application is based off IBM Hyperledger Boiler Plate guide.
 
 ## Prerequisites
 - [Go](https://golang.org/)
-- [Govend](https://github.com/govend/govend) 
+- [Govend](https://github.com/govend/govend)
 Once you have installed _go_, you can download the package with `go get -u github.com/govend/govend`.
 **Important:** Be sure your `GOPATH` variable is defined, the directory exists, you have the right permissions to read/write in it and the installation (command above) completes correctly (empty output in console). Furthermore, to be able to use `govend` bin to download the _vendor_ directory, you need to add your `GOPATH/bin` to the global `PATH` variable. For instance, add them to *.bash_profile* or *.profile* (e.g.):
 ```
@@ -33,8 +36,8 @@ Once you have installed _node_ and _npm_, you can install the module with: `npm 
 
 ### Cloning and installing
 Use git clone from your preferred workspace folder to clone your project-code with:  
-1. git clone https://github.com/IBM-Blockchain/fabric-boilerplate.git   
-2. cd `fabric-boilerplate` and run `npm install`  
+1. git clone https://github.com/NationalAssociationOfRealtors/CommitteeChain
+2. cd `CommitteeChain` and run `npm install`  
 
 ### Setting up Hyperledger Fabric
 1. Pull _peer_ image: `docker pull hyperledger/fabric-peer:x86_64-0.6.1-preview`
@@ -52,7 +55,7 @@ hyperledger/fabric-peer         x86_64-0.6.1-preview   21cb00fb27f4
 ```
 
 ## Running the application automatically
-From your WORKSPACE/fabric-boilerplate folder:
+From your WORKSPACE/CommitteeChain folder:
 
 > docker-compose up
 
@@ -60,7 +63,7 @@ This will start up a local blockchain network with two validating peers and a me
 The first time you run this script it will take a little while to download the necessary images.
 
 You can see if your local blockchain network is running by going to `localhost:7050/chain` in your browser.
-Once the network is up and running, open a second terminal and from your WORKSPACE/fabric-boilerplate folder:
+Once the network is up and running, open a second terminal and from your WORKSPACE/CommitteeChain folder:
 
 > npm start
 
@@ -68,7 +71,7 @@ This will start up a NodeJS application that serves the frontend, deploys the ch
 
 Check if the app is running at `http://localhost:8080/` in your browser. You can login with the user credentials you find in `testData/testData.json`  
 
-To make local development easier there is a script that will cleanup your environment, start the blockchain network and run the app. From your _WORKSPACE/fabric-boilerplate_ folder:
+To make local development easier there is a script that will cleanup your environment, start the blockchain network and run the app. From your _WORKSPACE/fCommitteeChain_ folder:
 
 **Warning:** This script ask you either to clean or not your environment. Be aware answering **yes** you will **permanently deleted** all your containers (not images).
 
@@ -164,7 +167,6 @@ If any of these steps help, search for a similar error in the issues section and
 
 **T:** I am using a Windows machine and I have troubles running `npm install` / `node-gyp` .
 
-**S:** Consider to have all the necessary to build node modules on Windows. Have a look at this [discussion](https://github.com/IBM-Blockchain/fabric-boilerplate/issues/7).
 
 **T:** I can build the chaincode in local with `go build` or `npm run gobuild`; the server logs state my chaincode was successfully deployed and it returns a chaincode id; the app is up and running and I can browse the login page. Nevertheless:
 
@@ -234,7 +236,7 @@ If the problem persists, look first for similar discussions about that issue and
 
 [Working Group Meetings](https://wiki.hyperledger.org/community/calendar-public-meetings)
 
-[Hyperledger Fabric Wiki](https://wiki.hyperledger.org/) 
+[Hyperledger Fabric Wiki](https://wiki.hyperledger.org/)
 
 [Learn chaincode](https://github.com/IBM-Blockchain/learn-chaincode)
 
