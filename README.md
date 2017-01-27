@@ -4,6 +4,8 @@ Distributed Committee Service Tracking on Hyperledger Fabric
 <kbd>
 ![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/CommitteeChain/master/client/assets/images/ss.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
 </kbd>
+
+
 There is a simple AngularJS frontend application, a NodeJS backend application and of course a blockchain network. Locally, the app starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
 
 The Application uses Hyperledger Fabric **v0.6.1-developer-preview** and **HFC 0.6.5**.
@@ -37,6 +39,7 @@ Once you have installed _node_ and _npm_, you can install the module with: `npm 
 ### Cloning and installing
 Use git clone from your preferred workspace folder to clone your project-code with:  
 1. git clone https://github.com/NationalAssociationOfRealtors/CommitteeChain
+
 2. cd `CommitteeChain` and run `npm install`  
 
 ### Setting up Hyperledger Fabric
