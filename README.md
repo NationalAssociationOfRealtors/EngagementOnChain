@@ -1,9 +1,9 @@
 # CommitteeChain
 Distributed Committee Service Tracking on Hyperledger Fabric
 
-
+<kbd>
 ![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/CommitteeChain/master/client/assets/images/ss.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
-
+</kbd>
 There is a simple AngularJS frontend application, a NodeJS backend application and of course a blockchain network. Locally, the app starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
 
 The Application uses Hyperledger Fabric **v0.6.1-developer-preview** and **HFC 0.6.5**.
