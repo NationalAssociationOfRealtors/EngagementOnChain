@@ -1,32 +1,32 @@
 {
 	"users":[
 		{
-			"id":"john1",
-			"nrds":"084003277",
+			"id":"084003277",
+			"username":"john1",
 			"password":"passw0rd",
 			"firstName":"John",
 			"lastName":"Doe",
 			"things":["2"],
-            "address": "Dam 1, 1012 JS Amsterdam, The Netherlands",
-            "phoneNumber": "0900 0048",
-            "emailAddress": "johndoe@gmail.com",
-            "role": 0
+			"address": "Dam 1, 1012 JS Amsterdam, The Netherlands",
+			"phoneNumber": "0900 0048",
+			"emailAddress": "johndoe@gmail.com",
+			"role": 0
 		},
 		{
-			"id":"dconroy",
-			"nrds":"084001677",
+			"id":"084001677",
+			"username":"dconroy",
 			"password":"Abudabu1!",
 			"firstName":"Dave",
 			"lastName":"Conroy",
-			"things":["1","2","3","4","7"],
+			"things":["1","2","3","4","17"],
 			"address": "123 Fake Street",
 			"phoneNumber": "123-123-1234 ",
 			"emailAddress": "johndoe@gmail.com",
 			"role": 0
 		},
 		{
-			"id":"jane1",
-			"nrds":"084003277",
+			"id":"084003287",
+			"username":"jane1",
 			"password":"passw0rd",
 			"firstName":"Jane",
 			"lastName":"Doe",
@@ -76,7 +76,7 @@
 		},
 		{
 			"id":"7",
-			"description":"IT Security for Dummies",
+			"description":"Code of Ethics Training",
 			"date": "2001",
 			"assoc_id":"2050"
 		}
