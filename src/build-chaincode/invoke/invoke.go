@@ -9,7 +9,7 @@ import (
 var logger = shim.NewLogger("invoke")
 
 func main() {
-	logger.SetLevel(shim.LogDebug)
+	logger.SetLevel(shim.LogInfo)
 }
 
 var Functions = map[string]func(shim.ChaincodeStubInterface,[]string)([]byte, error) {
@@ -47,7 +47,7 @@ func Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]b
 func add_test_data(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
     var usersIndex = args[0]
     var thingsIndex = args[1]
-
+		logger.Debugf(usersIndex)
     var users []data.User
     err := json.Unmarshal([]byte(usersIndex), &users)
 	if err != nil { return nil, err }
@@ -73,7 +73,7 @@ func add_user(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 }
 func add_thing(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var item data.Thing
-	err := json.Unmarshal([]byte(args[1]), &item)
+	err := json.Unmarshal([]byte(args[0]), &item)
 	if err != nil { return nil, err }
 	return nil, data.Save(stub, item)
 }

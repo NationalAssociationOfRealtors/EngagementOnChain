@@ -20,11 +20,11 @@ const logger                = require('../utils/logger');
 exports.login = function(req, res) {
 
     logger.debug("Login attempt w/ username: ", req.body.username);
-    
+
     const args = [req.body.username, req.body.password ];
-    
+
     BlockchainService.query("authenticate", args, req.body.username).then(function(result){
-        
+
         if (!result.user) {
             res.json({ success: false, message: 'Authentication failed. User not found.' });
         } else if (result.user) {
@@ -49,10 +49,10 @@ exports.login = function(req, res) {
                     certRole: result.certRole,
                     thingId: result.thingId
                 });
-                
+
             }
         }
-        
+
     }).catch(function(err){
         logger.warn(err);
         return res.status(401).send({
@@ -63,7 +63,7 @@ exports.login = function(req, res) {
 };
 
 function validPassword(user, password) {
-        var hash = crypto.pbkdf2Sync(password, user.salt, 1000, 64).toString('hex');
+        var hash = crypto.pbkdf2Sync(password, user.salt, 1000, 64,'sha1').toString('hex');
         return user.hash === hash;
 }
 

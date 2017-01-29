@@ -3,8 +3,8 @@ var logger = require('../../../utils/logger');
 // Model for User object
 /*
     {
-        "userId"        :   String,
-        "nrds"        :   String,
+        "id"            :   String,
+        "username"      :   String,
         "salt"          :   String,
         "hash"          :   String,
         "firstName"     :   String,
@@ -21,7 +21,7 @@ var logger = require('../../../utils/logger');
 */
 
 function User   (   id,
-                    nrds,
+                    username,
                     password,
                     firstName,
                     lastName,
@@ -41,13 +41,13 @@ function User   (   id,
 
     // Attributes for user object
     this.id                 =   id;
-    this.nrds               =   nrds;
+    this.username           =   username;
     this.firstName          =   firstName;
     this.lastName           =   lastName;
     this.things             =   things;
     // A hash is created based on a salt (random string) and the given password
     this.salt               =   crypto.randomBytes(16).toString('hex');
-    this.hash               =   crypto.pbkdf2Sync(password, this.salt, 1000, 64).toString('hex');
+    this.hash               =   crypto.pbkdf2Sync(password, this.salt, 1000, 64,'sha1').toString('hex');
     this.address            =   address;
     this.phoneNumber        =   phoneNumber;
     this.emailAddress       =   emailAddress;

@@ -29,7 +29,7 @@ type BlockchainItemer interface {
 
 type User struct {
 	Id           string   `json:"id"` //Used to register with CA
-	Nrds         string		`json:"nrds"`
+  Username     string   `json:"username"`
 	Salt         string   `json:"salt"`
 	Hash         string   `json:"hash"`
 	FirstName    string   `json:"firstName"`
@@ -49,7 +49,7 @@ func (u User) GetIndexStr() string { return indexStrings[utils.GetTypeName(u)] }
 type Thing struct {
 	Id          string `json:"id"`
 	Description string `json:"description"`
-	Year        string `json:"date"`
+	Date        string `json:"date"`
 	Assoc_id        string `json:"assoc_id"`
 }
 

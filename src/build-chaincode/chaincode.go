@@ -9,7 +9,7 @@ import (
 
 type SimpleChaincode struct {}
 
-var logger = shim.NewLogger("fabric-boilerplate")
+var logger = shim.NewLogger("CommitteeChain")
 
 // Init - is called when the chaincode is deployed
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
