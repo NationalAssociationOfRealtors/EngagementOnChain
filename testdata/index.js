@@ -14,7 +14,7 @@ exports.invokeTestData = function(){
     var users = testData.users.map(function(user){
         return new User(
             user.id,
-            user.nrds,
+            user.username,
             user.password,
             user.firstName,
             user.lastName,
