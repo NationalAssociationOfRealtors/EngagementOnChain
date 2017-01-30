@@ -73,7 +73,7 @@ func add_user(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 }
 func add_thing(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var item data.Thing
-	err := json.Unmarshal([]byte(args[0]), &item)
+	err := json.Unmarshal([]byte(args[1]), &item)
 	if err != nil { return nil, err }
 	return nil, data.Save(stub, item)
 }
