@@ -2,7 +2,6 @@
 	"users":[
 		{
 			"id":"084003277",
-			"username":"john1",
 			"password":"passw0rd",
 			"firstName":"John",
 			"lastName":"Doe",
@@ -13,20 +12,18 @@
 			"role": 0
 		},
 		{
-			"id":"084001674",
-			"username":"jbingham",
-			"password":"Abudabu1!",
-			"firstName":"Jeremey",
-			"lastName":"Bingham",
-			"things":["1","2","3","4","7"],
+			"id":"084001677",
+			"password":"12QWaszx",
+			"firstName":"David",
+			"lastName":"Conroy",
+			"things":["1","2","3","4","7","6a0a2ac8-e34b-e311-a1e3-00155d690d2a"],
 			"address": "123 Fake Street",
 			"phoneNumber": "123-123-1234 ",
-			"emailAddress": "johndoe@gmail.com",
+			"emailAddress": "dconroy@gmail.com",
 			"role": 0
 		},
 		{
 			"id":"084003287",
-			"username":"jane1",
 			"password":"passw0rd",
 			"firstName":"Jane",
 			"lastName":"Doe",
@@ -40,37 +37,37 @@
 	"things":[
 		{
 			"id":"1",
-			"description":"National Board of Directors",
+			"description":"Board of Directors",
 			"date": "2016",
 			"assoc_id":"1"
 		},
 		{
 			"id":"2",
-			"description":"State Board of Directors",
+			"description":"Investment Committee",
 			"date": "2016",
 			"assoc_id":"0840"
 		},
 		{
 			"id":"3",
-			"description":"Local Board of Directors",
+			"description":"RPAC Trustees",
 			"date": "2016",
 			"assoc_id":"1586"
 		},
 		{
 			"id":"4",
-			"description":"Local Finance Committee",
+			"description":"Finance Committee",
 			"date": "2015",
 			"assoc_id":"0369"
 		},
 		{
 			"id":"5",
-			"description":"State Strategic Planning Committee",
+			"description":"Strategic Planning Committee",
 			"date": "2014",
 			"assoc_id":"1"
 		},
 		{
 			"id":"6",
-			"description":"Local RPAC Committee",
+			"description":"Building Search Task Force",
 			"date": "2013",
 			"assoc_id":"0369"
 		},

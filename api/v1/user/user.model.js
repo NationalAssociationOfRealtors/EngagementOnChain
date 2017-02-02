@@ -3,8 +3,7 @@ var logger = require('../../../utils/logger');
 // Model for User object
 /*
     {
-        "id"            :   String,
-        "username"      :   String,
+        "userId"        :   String,
         "salt"          :   String,
         "hash"          :   String,
         "firstName"     :   String,
@@ -21,7 +20,6 @@ var logger = require('../../../utils/logger');
 */
 
 function User   (   id,
-                    username,
                     password,
                     firstName,
                     lastName,
@@ -41,7 +39,6 @@ function User   (   id,
 
     // Attributes for user object
     this.id                 =   id;
-    this.username           =   username;
     this.firstName          =   firstName;
     this.lastName           =   lastName;
     this.things             =   things;

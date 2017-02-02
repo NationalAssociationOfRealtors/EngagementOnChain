@@ -14,7 +14,6 @@ exports.invokeTestData = function(){
     var users = testData.users.map(function(user){
         return new User(
             user.id,
-            user.username,
             user.password,
             user.firstName,
             user.lastName,
@@ -25,7 +24,7 @@ exports.invokeTestData = function(){
             user.role
         );
     });
-
+  logger.debug(JSON.stringify(users));
     //
     var args = [JSON.stringify(users),
                 JSON.stringify(testData.things)

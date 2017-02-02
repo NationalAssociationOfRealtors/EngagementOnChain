@@ -66,14 +66,16 @@ func add_test_data(stub shim.ChaincodeStubInterface, args []string) ([]byte, err
 
 // args 0 is the caller id (not anymore needed in fabric v. 0.6)
 func add_user(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
+	logger.Infof("add_user called")
 	var item data.User
-	err := json.Unmarshal([]byte(args[1]), &item)
+	err := json.Unmarshal([]byte(args[0]), &item)
 	if err != nil { return nil, err }
 	return nil, data.Save(stub, item)
 }
 func add_thing(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
+logger.Infof("add_thing called")
 	var item data.Thing
-	err := json.Unmarshal([]byte(args[1]), &item)
+	err := json.Unmarshal([]byte(args[0]), &item)
 	if err != nil { return nil, err }
 	return nil, data.Save(stub, item)
 }
