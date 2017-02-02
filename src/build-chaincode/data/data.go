@@ -29,7 +29,6 @@ type BlockchainItemer interface {
 
 type User struct {
 	Id           string   `json:"id"` //Used to register with CA
-  Username     string   `json:"username"`
 	Salt         string   `json:"salt"`
 	Hash         string   `json:"hash"`
 	FirstName    string   `json:"firstName"`
