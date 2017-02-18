@@ -228,6 +228,10 @@ A possible way to solve the issue is doing the following:
 If the problem persists, look first for similar discussions about that issue and eventually open a new one.
 
 # Support and documentation
+[Dave Conroy ](https://twitter.com/conroydave)
+
+[CRT Labs](https://twitter.com/crtlabs)
+
 [Hyperledger project](https://www.hyperledger.org/)
 
 [Hyperleder Fabric Complete Doc](https://hyperledger-fabric.readthedocs.io/en/latest/)
