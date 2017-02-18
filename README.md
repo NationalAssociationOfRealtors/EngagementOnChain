@@ -1,4 +1,4 @@
-# CommitteeChain
+# EngagementOnChain
 Distributed Committee Service Tracking on Hyperledger Fabric
 
 <kbd>
@@ -57,7 +57,7 @@ hyperledger/fabric-peer         x86_64-0.6.1-preview   21cb00fb27f4
 ```
 
 ## Running the application automatically
-From your WORKSPACE/CommitteeChain folder:
+From your WORKSPACE/EngagementOnChain folder:
 
 > docker-compose up
 
@@ -65,7 +65,7 @@ This will start up a local blockchain network with two validating peers and a me
 The first time you run this script it will take a little while to download the necessary images.
 
 You can see if your local blockchain network is running by going to `localhost:7050/chain` in your browser.
-Once the network is up and running, open a second terminal and from your WORKSPACE/CommitteeChain folder:
+Once the network is up and running, open a second terminal and from your WORKSPACE/EngagementOnChain folder:
 
 > npm start
 
@@ -73,7 +73,7 @@ This will start up a NodeJS application that serves the frontend, deploys the ch
 
 Check if the app is running at `http://localhost:8080/` in your browser. You can login with the user credentials you find in `testData/testData.json`  
 
-To make local development easier there is a script that will cleanup your environment, start the blockchain network and run the app. From your _WORKSPACE/fCommitteeChain_ folder:
+To make local development easier there is a script that will cleanup your environment, start the blockchain network and run the app. From your _WORKSPACE/fEngagementOnChain_ folder:
 
 **Warning:** This script ask you either to clean or not your environment. Be aware answering **yes** you will **permanently deleted** all your containers (not images).
 
