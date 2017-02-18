@@ -38,7 +38,7 @@ Once you have installed _node_ and _npm_, you can install the module with: `npm 
 
 ### Cloning and installing
 Use git clone from your preferred workspace folder to clone your project-code with:  
-1. git clone https://github.com/NationalAssociationOfRealtors/CommitteeChain.git
+1. git clone https://github.com/NationalAssociationOfRealtors/EngagementOnChain.git   
 2. cd `EngagementOnChain` and run `npm install`  
 
 ### Setting up Hyperledger Fabric
