@@ -231,6 +231,10 @@ A possible way to solve the issue is doing the following:
 
 If the problem persists, look first for similar discussions about that issue and eventually open a new one.
 
+# AMS Compatability Party Support
+[RAMCO](https://github.com/RAMCO-AMS/RamcoChain)
+
+
 # Support and documentation
 [Dave Conroy ](https://twitter.com/conroydave)
 
@@ -251,6 +255,3 @@ If the problem persists, look first for similar discussions about that issue and
 [Learn chaincode](https://github.com/IBM-Blockchain/learn-chaincode)
 
 [Hyperldger Fabric Client SDK (HFC)](https://fabric-sdk-node.readthedocs.io/en/latest/)
-
-# Third Party Support
-[RAMCO](https://github.com/RAMCO-AMS/RamcoChain)
