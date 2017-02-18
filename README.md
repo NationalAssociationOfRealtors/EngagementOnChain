@@ -2,7 +2,7 @@
 Distributed Committee Service Tracking on Hyperledger Fabric
 
 <kbd>
-![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/CommitteeChain/master/client/assets/images/ss.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
+![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/EngagementOnChain/master/client/assets/images/ss.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
 </kbd>
 
 
@@ -38,7 +38,7 @@ Once you have installed _node_ and _npm_, you can install the module with: `npm 
 
 ### Cloning and installing
 Use git clone from your preferred workspace folder to clone your project-code with:  
-1. git clone https://github.com/NationalAssociationOfRealtors/CommitteeChain.git 
+1. git clone https://github.com/NationalAssociationOfRealtors/CommitteeChain.git
 2. cd `CommitteeChain` and run `npm install`  
 
 ### Setting up Hyperledger Fabric
