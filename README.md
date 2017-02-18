@@ -231,7 +231,7 @@ A possible way to solve the issue is doing the following:
 
 If the problem persists, look first for similar discussions about that issue and eventually open a new one.
 
-# AMS Compatability Party Support
+# AMS Compatibility
 [RAMCO](https://github.com/RAMCO-AMS/RamcoChain)
 
 
