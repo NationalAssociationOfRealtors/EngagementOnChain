@@ -1,4 +1,4 @@
-# EngagementOnChain
+# EngagementOnChain - FOR DEMONSTRATION ONLY
 Distributed REALTOR Engagement Tracking on Hyperledger Fabric
 
 <kbd>
