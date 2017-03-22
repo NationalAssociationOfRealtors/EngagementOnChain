@@ -63,13 +63,13 @@ var environments = {
         network:{
             peers: [
                 {
-                    discovery_host: '192.168.99.100',
+                    discovery_host: 'localhost',
                     discovery_port: 7051
                 }
             ],
             ca : {
                 ca : {
-                    url :  "192.168.99.100:7054"
+                    url :  "localhost:7054"
                 }
             },
             app_users: app_users
