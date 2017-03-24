@@ -83,6 +83,17 @@ To make local development easier there is a script that will cleanup your enviro
 
 > ./start.sh
 
+Once you have been thorugh the process of setting up the system and ensuring it runs correctly, you can routinely setup "demos" for interested parties by running:
+
+> ./run_all.sh
+
+This script will:
+
+1. Cleanup the environment.  You are prompted if you would like to do this.
+2. Pull images
+3. Clone the chaincode and prepare the code
+4. Start the server
+
 ## Running on Bluemix
 First run the following:
 ```
@@ -255,3 +266,4 @@ If the problem persists, look first for similar discussions about that issue and
 [Learn chaincode](https://github.com/IBM-Blockchain/learn-chaincode)
 
 [Hyperldger Fabric Client SDK (HFC)](https://fabric-sdk-node.readthedocs.io/en/latest/)
+
