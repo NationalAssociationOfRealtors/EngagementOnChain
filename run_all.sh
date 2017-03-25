@@ -5,39 +5,34 @@ NETWORK_PEER="dev-"
 OPERATING_ENV="hyperledger"
 NPM_SCRIPT="start"
 
-printf "###################################################\n"
-printf "#####     HYPERLEDGER FABRIC SETUP SCRIPT     #####\n"
-printf "###################################################\n\n"
+printf "#################################################\n"
+printf "#####  HYPERLEDGER FABRIC V0.6 DEMO SCRIPT  #####\n"
+printf "#################################################\n\n"
 
 clear_all() {
+# clear chaincode 
   printf "clearing blockchain directory: $BC \n"
-#  rm -rf $BC/deployLocal/* 2>/dev/null
-  rm -rf $BC/deployLocal/*
+  rm -rf $BC/deployLocal/* 2>/dev/null
   printf "keyValStore removed\n"
   printf "Latest deployed removed\n"
+
+# clear out docker containers and images 
   docker rm -f $(docker ps -a -q) 2>/dev/null
   printf "All docker containers removed\n"
   docker rmi -f `docker images | grep $NETWORK_PEER | awk '{print $3}'` 2>/dev/null
   docker rmi -f `docker images | grep $OPERATING_ENV | awk '{print $3}'` 2>/dev/null
-#  docker rmi -f $(docker images -q) 2>/dev/null 
   printf "All images removed\n"
   docker rmi $(docker images -qf "dangling=true") 2>/dev/null
   printf "All untagged images removed\n"
-# Delete all containers
-#docker rm $(docker ps -a -q)
-# Delete all images
-##docker rmi $(docker images -q)
 
+#  pull fabric V0.6 images 
   docker pull hyperledger/fabric-peer:x86_64-0.6.1-preview
   docker pull hyperledger/fabric-membersrvc:x86_64-0.6.1-preview
   docker pull hyperledger/fabric-baseimage:x86_64-0.2.1
   docker tag hyperledger/fabric-baseimage:x86_64-0.2.1 hyperledger/fabric-baseimage:latest
   docker images
 
-#  cd ..
-#  rm -rf EngagementOnChain
-#  git clone https://github.com/NationalAssociationOfRealtors/EngagementOnChain.git
-#  cd EngagementOnChain
+# rebuild node.js modules if necessary 
   if ! [ -d "node_modules" ]; then
 printf "Remove and rebuild modules directory\n" 
     rm -rf "node_modules"
