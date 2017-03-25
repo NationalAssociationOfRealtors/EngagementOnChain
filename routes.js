@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
     res.render('client/index');
 });
 
+router.get('/favicon.ico', function(req, res) {
+    res.sendStatus(204);
+});
+
 /* SET CORS HEADERS FOR API */
 router.all('/api/*', (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
