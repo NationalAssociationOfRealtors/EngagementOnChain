@@ -1,13 +1,14 @@
 # EngagementOnChain - FOR DEMONSTRATION ONLY
 Distributed REALTOR Engagement Tracking on Hyperledger Fabric
 
-<kbd>
-![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/EngagementOnChain/master/client/assets/images/ss1.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
-</kbd>
 
-<kbd>
-![Screenshots](https://raw.githubusercontent.com/NationalAssociationOfRealtors/EngagementOnChain/master/client/assets/images/ss2.png?token=AECgCuHzwGHcvjxMosaP5U9DIFZxOhFGks5YlNUMwA%3D%3D)
-</kbd>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NationalAssociationOfRealtors/EngagementOnChain/master/client/assets/images/ss1.png" alt="NAR Blockchain Screenshot"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NationalAssociationOfRealtors/EngagementOnChain/master/client/assets/images/ss2.png" alt="NAR Blockchain Screenshot"/>
+</p>
 
 
 There is a simple AngularJS frontend application, a NodeJS backend application and of course a blockchain network. Locally, the app starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
