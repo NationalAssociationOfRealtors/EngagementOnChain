@@ -1,15 +1,15 @@
 applications:
-- name: APPNAME-server
-  host: APPNAME-api
+- name: Engagementv2-server
+  host: Engagementv2-api
   path: server
   memory: 512M
   instances: 1
   disk_quota: 1024M
   command: "NODE_ENV=production node dist/app.js"
-- name: APPNAME-client
-  host: APPNAME
+- name: Engagementv2-client
+  host: Engagementv2
   path: client/dist
   memory: 64M
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
 services:
-- BLOCKCHAINSERVICENAME
+- Blockchain-w9
