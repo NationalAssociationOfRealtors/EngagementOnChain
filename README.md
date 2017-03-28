@@ -1,5 +1,5 @@
 # Distributed REALTOR Engagement Tracking on Hyperledger Fabric
-Distributed REALTOR Engagement Tracking on Hyperledger is a boilerplate application to get you up and running quickly with your own blockchain application. With this app you can run locally as well as on IBM Bluemix. There is a simple Angular frontend application, a NodeJS backend application and of course a blockchain network, all running in containers. Locally, the REALTOR Engagement Tracking starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
+REALTOR Engagement Tracking is a simple application to demonstrate how blockchain technology could be used to track REALTOR involvement at all levels of the association. It is designed to be able to get up up and running quickly. With this app you can run locally as well as on IBM Bluemix. There is a simple Angular frontend application, a NodeJS backend application and of course a blockchain network, all running in containers. Locally, the REALTOR Engagement Tracking starts up a blockchain network using Docker containers; on Bluemix you can use the Blockchain service.
 
 The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0.6.5.
 
