@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "userID": "john",
-      "username": "john",
+      "userID": "084003277",
+      "username": "084003277",
       "password": "passw0rd",
       "attributes": [
         {
@@ -10,17 +10,43 @@
           "value": "john"
         }
       ]
+    },
+    {
+      "userID": "084001677",
+      "username": "084001677",
+      "password": "passw0rd",
+      "attributes": [
+        {
+          "name": "userID",
+          "value": "Dave"
+        }
+      ]
+    },
+    {
+      "userID": "084003287",
+      "username": "084003287",
+      "password": "passw0rd",
+      "attributes": [
+        {
+          "name": "userID",
+          "value": "Jane"
+        }
+      ]
     }
   ],
   "things": [
     {
       "thingID": "1",
-      "userID": "john",
+      "userID": "084001677",
       "someProperty": "8716948000003"
     },
     {
       "thingID": "2",
-      "userID": "john",
+      "userID": "084003277",
+      "someProperty": "124914266456"
+    }{
+      "thingID": "3",
+      "userID": "084003287",
       "someProperty": "124914266456"
     }
   ]
