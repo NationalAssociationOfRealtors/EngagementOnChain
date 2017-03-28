@@ -49,7 +49,7 @@ When you end docker-compose, the containers still exist. They keep state:
   - chaincodeId of the last deployment  
   - keyValStore with the private keys of the users  
 
-So if you start the app again, you can use your old chaincode. If you want to clear, just run with `docker-compose --force-recreate`.  
+So if you start the app again, you can use your old chaincode. If you want to clear, just run with `docker-compose up --force-recreate`.  
 
 Currently if you change the chaincode you will have to recreate the containers. In the future we will add a filewatcher for the chaincode as well.
 
@@ -129,10 +129,6 @@ Where NAME_OF_THE_APP is the app name you provided in the manifest.yml file.
 [Hyperledger project](https://www.hyperledger.org/)
 
 [Hyperleder Fabric Complete Doc](https://hyperledger-fabric.readthedocs.io/en/latest/)
-
-[Official Hyperledger slack channel](https://hyperledgerproject.slack.com)
-
-[IRC](freenode.net) channel #hyperledger
 
 [Working Group Meetings](https://wiki.hyperledger.org/community/calendar-public-meetings)
 
