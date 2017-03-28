@@ -1,9 +1,11 @@
 <div>
-  <h1>LOGIN</h1>
+  <h4>v2 typescript</h4>
   <div>
-    <input type="text" placeholder="Username" autofocus [(ngModel)]="username">
+      <label for="userName" class="control-label">Username</label>
+    <input type="text" placeholder="Username" autofocus [(ngModel)]="username"><br>
+      <label for="inputPassword" class="control-label">Password</label>
     <input type="password" placeholder="Password" [(ngModel)]="password">
-    <br>
-    <button (click)="login(username, password)">Submit</button>
+    <br><br><br>
+    <button id="login-button" class="btn btn-primary btn-md" (click)="login(username, password)">Submit</button>
   </div>
 </div>
