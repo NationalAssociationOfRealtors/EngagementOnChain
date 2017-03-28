@@ -36,16 +36,17 @@
   ],
   "things": [
     {
-      "thingID": "1",
+      "thingID": "6a0a2ac8-e34b-e311-a1e3-00155d690d2a - Board of Directors",
       "userID": "084001677",
       "someProperty": "8716948000003"
     },
     {
-      "thingID": "2",
+      "thingID": "State RPAC Committee",
       "userID": "084003277",
       "someProperty": "124914266456"
-    }{
-      "thingID": "3",
+    },
+    {
+      "thingID": "Local Member Benefits Committee",
       "userID": "084003287",
       "someProperty": "124914266456"
     }
