@@ -9,7 +9,7 @@ applications:
 - name: Engagementv2-client
   host: Engagementv2
   path: client/dist
-  memory: 64M
+  memory: 128M
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
 services:
 - Blockchain-w9
