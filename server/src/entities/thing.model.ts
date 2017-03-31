@@ -6,6 +6,7 @@ export class Thing {
     private _thingID: string;
 
     public constructor(private _someProperty: string,
+                       private _description: string,
                        private _userID: string) {
         this._thingID = shortID.generate();
     }
@@ -17,6 +18,9 @@ export class Thing {
     public get someProperty(): string {
         return this._someProperty;
     }
+    public get description(): string {
+        return this._description;
+    }
 
     public get userID(): string {
         return this._userID;
@@ -26,6 +30,7 @@ export class Thing {
         return {
             'thingID': this.thingID,
             'someProperty': this.someProperty,
+            'description': this.description,
             'userID': this.userID,
         };
     }

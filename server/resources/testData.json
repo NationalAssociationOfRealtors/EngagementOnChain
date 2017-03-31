@@ -36,18 +36,27 @@
   ],
   "things": [
     {
-      "thingID": "6a0a2ac8-e34b-e311-a1e3-00155d690d2a - Board of Directors",
+      "thingID": "6a0a2ac8-e34b-e311-a1e3-00155d690d2a",
       "userID": "084001677",
+      "description": "Board of Directors",
       "someProperty": "8716948000003"
     },
     {
-      "thingID": "State RPAC Committee",
+      "thingID": "6a0a2ac8-e34b-e311-a1e3-00155d690d3a",
+      "userID": "084001677",
+      "description": "Technology Committee",
+      "someProperty": "8716948000003"
+    },
+    {
+      "thingID": "6a0a2ac8-e34b-e111-a1e3-00155d690d2a",
       "userID": "084003277",
+      "description": "State RPAC Committee",
       "someProperty": "124914266456"
     },
     {
-      "thingID": "Local Member Benefits Committee",
+      "thingID": "6a0a2ac8-e34b-e111-a1e3-00155d690d2a121",
       "userID": "084003287",
+      "description": "Audit Committee",
       "someProperty": "124914266456"
     }
   ]

@@ -22,7 +22,8 @@ func GetThingsByUserID(stub shim.ChaincodeStubInterface, userID string) ([]strin
 		return []string{}, errors.New("Unable to retrieve thingsIndex, reason: " + err.Error())
 	}
 
-	thingIDs := []string{}
+  descriptions := []string{}
+
 	for _, thingID := range thingsIndex {
 		thingAsBytes, err := stub.GetState(thingID)
 		if err != nil {
@@ -36,11 +37,11 @@ func GetThingsByUserID(stub shim.ChaincodeStubInterface, userID string) ([]strin
 		}
 
 		if thing.UserID == userID {
-			thingIDs = append(thingIDs, thing.ThingID)
+			descriptions = append(descriptions, thing.Description)
 		}
 	}
 
-	return thingIDs, nil
+	return descriptions, nil
 }
 
 func GetUser(stub shim.ChaincodeStubInterface, username string) (entities.User, error) {

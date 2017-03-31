@@ -24,6 +24,7 @@ type User struct {
 type Thing struct {
 	ThingID      	string 	`json:"thingID"`
 	SomeProperty 	string 	`json:"someProperty"`
+	Description 	string 	`json:"description"`
 	UserID    	string 	`json:"userID"`
 }
 
