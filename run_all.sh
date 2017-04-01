@@ -32,12 +32,12 @@ clear_all() {
   docker tag hyperledger/fabric-baseimage:x86_64-0.2.1 hyperledger/fabric-baseimage:latest
   docker images
 
-# rebuild node.js modules if necessary 
-  if ! [ -d "node_modules" ]; then
-printf "Remove and rebuild modules directory\n" 
-    rm -rf "node_modules"
-    npm install
+# build node.js modules 
+  if [ -d "node_modules" ]; then
+printf "Remove modules directory\n" 
   fi
+printf "Build modules directory\n" 
+  npm install
 }
 
 ask() {
