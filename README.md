@@ -12,21 +12,21 @@ The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0
 ## Prerequisites
 - Docker and docker-compose (https://www.docker.com/)  
 - Linux or Mac
-- Angular (test with 'ng -version', install with 'npm install -g angular-cli')
-- Golang (test with 'go version' install with instructions from the web)
-- TypeScript (test with 'tsc -v' install with 'npm install -g typescript')
-- tsLint (test with 'tslint -v' install with 'npm install -g tslint')
 
 Special note for Docker for Mac users:  Make sure you have the working directory shared by specifying the it in Preferences->File Sharing".  
 
-To have good support in your IDE it's advisable to also install NPM, TypeScript, TSLint and Golang.
+To have good support in your IDE it's advisable to also install NPM, Angular, TypeScript, TSLint and Golang.
+- Angular (test with `ng -version`, install with `npm install -g angular-cli`)
+- Golang (test with `go version` install with instructions from the web)
+- TypeScript (test with `tsc -v` install with `npm install -g typescript`)
+- TSLint (test with `tslint -v` install with `npm install -g tslint`)
 
 ## Getting started
 1. Fork this repo
 2. `git clone` your fork
 3. `cd` into the main directory and run `npm install` (or, if you don't have npm, `./install.sh`).
 
-This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while because there are nine steps.  Be patient.  
+This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while because there are nine steps in addition to pull down the base images.  Be patient.  
 
 To get rid of missing module errors in your IDE, also run `npm install` from the `server` and `client` directory. This is not mandatory to run the application.
 
