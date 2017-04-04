@@ -12,6 +12,10 @@ The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0
 ## Prerequisites
 - Docker and docker-compose (https://www.docker.com/)  
 - Linux or Mac
+- Angular (test with 'ng -version', install with 'npm install -g angular-cli')
+- Golang (test with 'go version' install with instructions from the web)
+- TypeScript (test with 'tsc -v' install with 'npm install -g typescript')
+- tsLint (test with 'tslint -v' install with 'npm install -g tslint')
 
 Special note for Docker for Mac users:  Make sure you have the working directory shared by specifying the it in Preferences->File Sharing".  
 
