@@ -26,7 +26,7 @@ To have good support in your IDE it's advisable to also install NPM, Angular, Ty
 2. `git clone` your fork
 3. `cd` into the main directory and run `npm install` (or, if you don't have npm, `./install.sh`).
 
-This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while because there are nine steps in addition to pull down the base images.  Be patient.  
+This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while because there can be up to 10 steps in addition to pull down the base images, depending on what the script finds.  Be patient.  
 
 To get rid of missing module errors in your IDE, also run `npm install` from the `server` and `client` directory. This is not mandatory to run the application.
 
