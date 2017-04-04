@@ -11,7 +11,9 @@ The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0
 
 ## Prerequisites
 - Docker and docker-compose (https://www.docker.com/)  
-- Linux or Mac  
+- Linux or Mac
+
+Special note for Docker for Mac users:  Make sure you have the working directory shared by specifying the it in Preferences->File Sharing".  
 
 To have good support in your IDE it's advisable to also install NPM, TypeScript, TSLint and Golang.
 
@@ -20,7 +22,7 @@ To have good support in your IDE it's advisable to also install NPM, TypeScript,
 2. `git clone` your fork
 3. `cd` into the main directory and run `npm install` (or, if you don't have npm, `./install.sh`).
 
-This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while.  
+This will pull the baseimage, peer and memberservice, download the Go dependencies of the chaincode and build your containers. It will take a while because there are nine steps.  Be patient.  
 
 To get rid of missing module errors in your IDE, also run `npm install` from the `server` and `client` directory. This is not mandatory to run the application.
 
