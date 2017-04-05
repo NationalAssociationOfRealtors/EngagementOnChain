@@ -7,7 +7,7 @@
       "attributes": [
         {
           "name": "userID",
-          "value": "john"
+          "value": "james"
         }
       ]
     },
@@ -30,6 +30,17 @@
         {
           "name": "userID",
           "value": "Jane"
+        }
+      ]
+    },
+    {
+      "userID": "john",
+      "username": "john",
+      "password": "passw0rd",
+      "attributes": [
+        {
+          "name": "userID",
+          "value": "john"
         }
       ]
     }
@@ -57,6 +68,12 @@
       "thingID": "6a0a2ac8-e34b-e111-a1e3-00155d690d2a121",
       "userID": "084003287",
       "description": "Audit Committee",
+      "someProperty": "124914266456"
+    },
+    {
+      "thingID": "6a0a2ac8-e34b-e111-a1e3-00155d690d2a121",
+      "userID": "john",
+      "description": "John's Campaign Fundrasier",
       "someProperty": "124914266456"
     }
   ]
