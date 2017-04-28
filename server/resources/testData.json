@@ -71,9 +71,15 @@
       "someProperty": "124914266456"
     },
     {
-      "thingID": "6a0a2ac8-e34b-e111-a1e3-00155d690d2a121",
+      "thingID": "6a0a2ac8-e99b-e111-a1e3-00155d690d2a121",
       "userID": "john",
-      "description": "John's Campaign Fundrasier",
+      "description": "Audit Committee",
+      "someProperty": "124914266456"
+    },
+    {
+      "thingID": "6a0a2ac8-e34b-e121-a1e3-00155d690d2a121",
+      "userID": "john",
+      "description": "John's Campaign Fundraiser",
       "someProperty": "124914266456"
     }
   ]
