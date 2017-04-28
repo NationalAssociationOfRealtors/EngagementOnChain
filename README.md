@@ -6,7 +6,7 @@ REALTOR Engagement Tracking is a simple application to demonstrate how blockchai
 </p>
 
 
-The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0.6.5.
+The REALTOR Engagement Tracking uses Hyperledger Fabric v0.6.1-preview and HFC 0.6.5. Travis support coming soon.
 
 
 ## Prerequisites
